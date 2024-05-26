@@ -11,6 +11,36 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+.logo-container {
+  width: 200px; /* Регулируйте размер круга по вашему усмотрению */
+  height: 200px;
+  background-color: white;
+  border-radius: 50%; /* Создаем круглую форму */
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin: left; /* Добавляем автоматический отступ справа и слева */
+}
+
+
+.logo {
+  max-width: 80%; /* Убедитесь, что логотип вмещается в круг */
+  height: auto;
+}
+
+
+.bg-blue-transparent.simple {
+  position: relative; /* Устанавливаем относительное позиционирование */
+  top: 200px; /* Задаем вертикальный отступ от верхнего края изображения */
+  text-align: center; /* Центрируем текст */
+  padding: 20px; /* Добавляем отступы */
+  background-color: rgba(0, 0, 255, 0.5); /* Пример задания цвета фона */
+  color: #fff; /* Пример задания цвета текста */
+}
+
+
+
+
 ol:after,
 ul:after {
   content: "";
@@ -71,20 +101,20 @@ a:focus {
 /* <<< btn-primary >>> */
 .btn-primary {
   color: #fff;
-  background-color: #356ba2;
+  background-color: #45c534;
   border-color: transparent;
 }
 
 .btn-primary.active, .btn-primary:active, .btn-primary.focus, .btn-primary:focus, .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary:hover {
   color: #fff;
-  background-color: #99ccff;
+  background-color: #10ac2a;
   border-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
-  background-color: #99ccff;
+  background-color: #20b732;
   border-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -157,7 +187,7 @@ textarea.form-control {
   right: 0;
   width: 26%;
   height: 100%;
-  background-color: #356ba2;
+  background-color: #0f720c9a;
   overflow-y: auto;
   z-index: 1;
   display: -webkit-box;
@@ -194,7 +224,7 @@ textarea.form-control {
   text-decoration: none;
 }
 
-.design a:hover { color: #99ccff; }
+.design a:hover { color: #ed9c04; }
 
 /* <<< Mobile Menu button >>> */
 .navbar-button {
@@ -249,7 +279,7 @@ textarea.form-control {
   opacity: 1;
   width: 25px;
   height: 3px;
-  background-color: #6699cc;
+  background-color: #ea460a;
   margin: 0 auto;
   left: 0;
   -webkit-transition: all 0.25s ease-in-out;
@@ -688,8 +718,8 @@ textarea.form-control {
 .work-section {
   padding-top: 90px!important;
   padding-bottom: 90px!important;
-  min-height: 850px;
-  background-color: #6699cc;
+  min-height: 150px;
+  background-color: #3dac33;
 }
 
 .work-section .container { max-width: 1242px; }
@@ -760,7 +790,7 @@ textarea.form-control {
 }
 
 .work-section .title {
-  margin-top: 5px;
+  margin-top: 350px;
   margin-left: 1px;
   border-bottom: 1px solid #fff;
 }
@@ -846,7 +876,7 @@ textarea.form-control {
 }
 
 .gallery-section {
-  background-color: #99ccff;
+  background-color: #3dac33;
 }
 
 .gallery-section .title {
@@ -954,7 +984,7 @@ figure.effect-julia:hover p {
 }
 
 .gallery-section .slick-dots li {
-  background-color: #6699cc;
+  background-color: #3dac33;
   width: 20px;
   height: 20px;
   border-radius: 100%;
@@ -964,13 +994,13 @@ figure.effect-julia:hover p {
 
 .gallery-section .slick-dots li.slick-active,
 .gallery-section .slick-dots li:hover {
-  background-color: #006699;
+  background-color: #266421;
 }
 
 .gallery-section .slick-dots li button { display: none; }
 
 .contact-section {
-  background-color: #6699cc;
+  background-color: #3dac33;
   flex-direction: column;
   justify-content: center;
 }
@@ -1022,7 +1052,7 @@ figure.effect-julia:hover p {
 
 .contact-section .contact-details ul li .lbl {
   display: inline-block;
-  max-width: 55px;
+  max-width: 95px;
   width: 100%;
 }
 
@@ -1050,7 +1080,7 @@ figure.effect-julia:hover p {
 /* <<< footer >>> */
 .footer {
   position: relative;
-  background-color: #6699cc;
+  background-color: #3dac33;
   color: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -1085,8 +1115,7 @@ figure.effect-julia:hover p {
 }
 
 .container {
-  padding-left: 50px;
-  padding-right: 50px;
+  position: relative; /* Устанавливаем относительное позиционирование для контейнера */
 }
 .container-2 { max-width: 1250px; }
 
